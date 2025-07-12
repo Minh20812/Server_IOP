@@ -23,5 +23,5 @@ jobs:
 
       - name: Run RSS Job
         env:
-          SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_CREDENTIALS }}
+          SERVICE_ACCOUNT_KEY: ${{ secrets.SERVICE_ACCOUNT_KEY }}
         run: node src/index.js
