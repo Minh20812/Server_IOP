@@ -2,7 +2,7 @@ name: Fetch RSS to Firestore
 
 on:
   schedule:
-    - cron: "0 23,4,9,14 * * *" # 6h,11h,16h,21h Việt Nam (UTC+7)
+    - cron: "0 22,3,8,13 * * *" # chạy 5h,10h,15h,20h giờ Việt Nam
   workflow_dispatch: # Cho phép chạy thủ công từ GitHub UI
 
 jobs:
