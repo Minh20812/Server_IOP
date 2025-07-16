@@ -210,7 +210,7 @@ class ProductHuntScraper:
             return False
     
     def save_to_firestore(self, products, collection_name="producthunt", clear_existing=True):
-        """Lưu danh sách sản phẩm vào Firestore - bao gồm field rank"""
+        """Lưu danh sách sản phẩm vào Firestore - bao gồm field rank và createdAt"""
         if not self.db:
             print("❌ Firebase chưa được khởi tạo - bỏ qua việc lưu vào database")
             return False
@@ -238,7 +238,8 @@ class ProductHuntScraper:
                     'title': product['title'],
                     'image': product['image'],
                     'link': product['link'],
-                    'topics': product['topics']
+                    'topics': product['topics'],
+                    'createdAt': SERVER_TIMESTAMP  # Thêm field createdAt với timestamp server
                 }
                 
                 # Lưu vào Firestore
@@ -249,6 +250,7 @@ class ProductHuntScraper:
                 print(f"  ✅ Đã lưu: #{product['rank']} - {product['title']}")
             
             print(f"🎉 Thành công! Đã thay thế toàn bộ dữ liệu cũ bằng {saved_count} sản phẩm mới trong collection '{collection_name}'")
+            print(f"🕐 Mỗi document đã được thêm field 'createdAt' với timestamp hiện tại")
             return True
             
         except Exception as e:
@@ -256,7 +258,7 @@ class ProductHuntScraper:
             return False
     
     def save_to_json(self, products, filename=None):
-        """Lưu dữ liệu ra file JSON (backup method) - bao gồm field rank"""
+        """Lưu dữ liệu ra file JSON (backup method) - bao gồm field rank và createdAt"""
         if not products:
             print("⚠️ Không có sản phẩm nào để lưu")
             return False
@@ -266,19 +268,23 @@ class ProductHuntScraper:
                 date_str = self.get_yesterday_date().replace('/', '-')
                 filename = f"producthunt_{date_str}.json"
             
-            # Chuẩn bị dữ liệu bao gồm rank
+            # Lấy thời gian hiện tại để thêm vào JSON
+            current_time = datetime.now().isoformat()
+            
+            # Chuẩn bị dữ liệu bao gồm rank và createdAt
             data = {
                 'date': self.get_yesterday_date(),
-                'scraped_at': datetime.now().isoformat(),
+                'scraped_at': current_time,
                 'total_products': len(products),
                 'products': [{
-                    'rank': product['rank'],  # Thêm rank vào JSON
+                    'rank': product['rank'],
                     'date': product['date'],
                     'description': product['description'],
                     'title': product['title'],
                     'image': product['image'],
                     'link': product['link'],
-                    'topics': product['topics']
+                    'topics': product['topics'],
+                    'createdAt': current_time  # Thêm createdAt vào JSON backup
                 } for product in products]
             }
             
@@ -287,6 +293,7 @@ class ProductHuntScraper:
                 json.dump(data, f, ensure_ascii=False, indent=2)
             
             print(f"💾 Đã lưu {len(products)} sản phẩm vào file: {filename}")
+            print(f"🕐 Mỗi sản phẩm đã được thêm field 'createdAt': {current_time}")
             return True
             
         except Exception as e:
@@ -318,6 +325,7 @@ class ProductHuntScraper:
         
         print(f"\n🎉 Hoàn thành! Đã hiển thị {len(products)} sản phẩm hàng đầu")
         print(f"⏰ Thời gian xử lý: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"🕐 Khi lưu vào Firestore, mỗi document sẽ có field 'createdAt' với timestamp hiện tại")
     
     def run(self, save_to_db=True, save_to_file=True):
         """Chạy script chính"""
@@ -378,13 +386,14 @@ if __name__ == "__main__":
     print("   • Sau đó lưu dữ liệu mới vào collection 'producthunt'")
     print("   • Đảm bảo dữ liệu luôn là mới nhất")
     print("\n🎯 CÁC FIELD ĐƯỢC LƯU:")
-    print("   • rank (mới)")
+    print("   • rank")
     print("   • date")
     print("   • description") 
     print("   • title")
     print("   • image")
     print("   • link")
     print("   • topics")
+    print("   • createdAt (mới) - timestamp khi tạo document")
     print("\n" + "="*50)
     
     # Khởi tạo scraper
