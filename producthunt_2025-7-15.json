@@ -1,0 +1,227 @@
+{
+  "date": "2025/7/15",
+  "scraped_at": "2025-07-16T10:18:21.030189",
+  "total_products": 17,
+  "products": [
+    {
+      "rank": 1,
+      "date": "2025/7/15",
+      "description": "Let your AI code — we’ll make it work.",
+      "title": "TestSprite 2.0",
+      "image": "https://ph-files.imgix.net/671b4478-5c5d-44c4-a935-146028fa4eec.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/testsprite",
+      "topics": [
+        "Developer Tools",
+        "Artificial Intelligence",
+        "No-Code"
+      ]
+    },
+    {
+      "rank": 2,
+      "date": "2025/7/15",
+      "description": "Connect direct to Salesforce & HubSpot with native formulas",
+      "title": "MCP for Google Sheets",
+      "image": "N/A",
+      "link": "https://www.producthunt.com/products/coefficient",
+      "topics": [
+        "API",
+        "Spreadsheets",
+        "Data"
+      ]
+    },
+    {
+      "rank": 3,
+      "date": "2025/7/15",
+      "description": "AI accounting for founders & accountants",
+      "title": "Finlens",
+      "image": "https://ph-files.imgix.net/fb724a0b-af64-4d15-bdea-bbf0885a8394.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/finlens",
+      "topics": [
+        "SaaS",
+        "Finance",
+        "Accounting"
+      ]
+    },
+    {
+      "rank": 4,
+      "date": "2025/7/15",
+      "description": "Imagine Cursor, but for PowerPoint presentations",
+      "title": "PPT.AI",
+      "image": "https://ph-files.imgix.net/468fca22-d94d-40c2-b4ee-33e32f6d4177.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/ppt-ai",
+      "topics": [
+        "Design Tools",
+        "SaaS",
+        "Artificial Intelligence"
+      ]
+    },
+    {
+      "rank": 5,
+      "date": "2025/7/15",
+      "description": "The open-source framework for real-time AI voice",
+      "title": "AI Voice Agent SDK",
+      "image": "N/A",
+      "link": "https://www.producthunt.com/products/video-sdk",
+      "topics": [
+        "Open Source",
+        "Developer Tools",
+        "Artificial Intelligence"
+      ]
+    },
+    {
+      "rank": 6,
+      "date": "2025/7/15",
+      "description": "Monitor and optimize brand presence across AI platforms",
+      "title": "Anvil",
+      "image": "https://ph-files.imgix.net/0ba99a88-55b7-41bf-98a9-6cb3f4ab9292.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/anvil-3",
+      "topics": [
+        "Analytics",
+        "Marketing",
+        "SEO"
+      ]
+    },
+    {
+      "rank": 7,
+      "date": "2025/7/15",
+      "description": "Publish 30 interlinked articles in 30 minutes",
+      "title": "Machined V3",
+      "image": "https://ph-files.imgix.net/d3d0d378-d035-4dcf-be12-9503ffe5937e.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/machined",
+      "topics": [
+        "SEO",
+        "Artificial Intelligence",
+        "Marketing automation"
+      ]
+    },
+    {
+      "rank": 8,
+      "date": "2025/7/15",
+      "description": "Craft hundreds of personalized emails in seconds",
+      "title": "ELMA - Ultimate Email Agent",
+      "image": "https://ph-files.imgix.net/daf8b54a-4d16-4aba-9306-9def631a3045.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/elma",
+      "topics": [
+        "Email",
+        "Email Marketing",
+        "Marketing"
+      ]
+    },
+    {
+      "rank": 9,
+      "date": "2025/7/15",
+      "description": "Your AI social media manager for X",
+      "title": "Soshi",
+      "image": "https://ph-files.imgix.net/82ce83df-7132-4d5c-b1fd-b3881e43b17d.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/soshi-v0",
+      "topics": [
+        "Growth Hacking",
+        "Virtual Assistants",
+        "Social media marketing"
+      ]
+    },
+    {
+      "rank": 10,
+      "date": "2025/7/15",
+      "description": "Discover & add Claude skills easily with one-click access",
+      "title": "Directory by Claude",
+      "image": "https://ph-files.imgix.net/ae49ce7d-30a4-457b-823a-2e1ee8d44dbb.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/claude",
+      "topics": [
+        "Artificial Intelligence",
+        "Bots"
+      ]
+    },
+    {
+      "rank": 11,
+      "date": "2025/7/15",
+      "description": "Get the perfect and available domain name for your startup",
+      "title": "Spark Namer",
+      "image": "https://ph-files.imgix.net/11d0dc63-165f-4455-8d6d-d805fdfd862f.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/spark-namer",
+      "topics": [
+        "Branding",
+        "SaaS",
+        "Artificial Intelligence"
+      ]
+    },
+    {
+      "rank": 12,
+      "date": "2025/7/15",
+      "description": "because tabs slow you down.",
+      "title": "browsr",
+      "image": "https://ph-files.imgix.net/72cc8609-2034-4c94-9b3a-d252162ec75d.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/browsr",
+      "topics": [
+        "Productivity",
+        "Developer Tools",
+        "Menu Bar Apps"
+      ]
+    },
+    {
+      "rank": 13,
+      "date": "2025/7/15",
+      "description": "A global community mapping the best laptop-friendly spots",
+      "title": "Laptopers",
+      "image": "https://ph-files.imgix.net/45759dde-9273-441b-bb22-7b416096932c.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/laptopers",
+      "topics": [
+        "Productivity",
+        "Social Networking",
+        "Community"
+      ]
+    },
+    {
+      "rank": 14,
+      "date": "2025/7/15",
+      "description": "Pump up your SaaS with embedded AI agents",
+      "title": "Latenode AI Agents Embedded",
+      "image": "https://ph-files.imgix.net/e8260bdd-dce0-45e0-a9b5-b757685cded2.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/latenode",
+      "topics": [
+        "API",
+        "Artificial Intelligence",
+        "No-Code"
+      ]
+    },
+    {
+      "rank": 15,
+      "date": "2025/7/15",
+      "description": "Transform ideas into complete books",
+      "title": "AuthorAI",
+      "image": "https://ph-files.imgix.net/5cacd574-dea5-4ce0-8973-418a3ffe9cb3.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/authorai",
+      "topics": [
+        "Writing",
+        "Artificial Intelligence",
+        "Books"
+      ]
+    },
+    {
+      "rank": 16,
+      "date": "2025/7/15",
+      "description": "The easiest way to share data with your customers",
+      "title": "Data Share by Explo",
+      "image": "https://ph-files.imgix.net/ab7e5f7c-382c-4cff-b204-c637497e0d71.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/explo",
+      "topics": [
+        "Developer Tools",
+        "Data & Analytics",
+        "Business Intelligence"
+      ]
+    },
+    {
+      "rank": 17,
+      "date": "2025/7/15",
+      "description": "A new agentic IDE to take you from prototype to production",
+      "title": "Kiro",
+      "image": "https://ph-files.imgix.net/35538934-ecae-47e8-bce2-cbfd6ce4c152.x-icon?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&frame=1",
+      "link": "https://www.producthunt.com/products/kiro",
+      "topics": [
+        "Prototyping",
+        "Software Engineering",
+        "Artificial Intelligence"
+      ]
+    }
+  ]
+}

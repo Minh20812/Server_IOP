@@ -1,0 +1,29 @@
+name: ProductHunt Scraper
+
+on:
+  schedule:
+    - cron: "0 22 * * *" # Chạy vào 5h sáng giờ Việt Nam (22h UTC)
+  workflow_dispatch: # Cho phép chạy thủ công từ GitHub UI
+
+jobs:
+  scrape-producthunt:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run ProductHunt Scraper
+        env:
+          SERVICE_ACCOUNT_KEY: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+        run: python scripts/producthunt_scraper.py

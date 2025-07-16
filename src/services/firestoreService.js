@@ -20,9 +20,9 @@ export async function saveToCollection(collectionName, articles) {
       title: article.title,
       link: article.link,
       source: article.source || "Unknown",
-      pubDate: Timestamp.fromDate(pubDate), // chuẩn hóa timestamp cho sort
-      pubDateRaw: pubDateString, // lưu chuỗi gốc để hiển thị (nếu cần)
-      createdAt: Timestamp.now(), // dùng timestamp luôn
+      pubDate: Timestamp.fromDate(pubDate),
+      pubDateRaw: pubDateString,
+      createdAt: Timestamp.now(),
     });
   });
   await batch.commit();
