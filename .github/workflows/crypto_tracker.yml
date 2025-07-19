@@ -1,0 +1,31 @@
+name: Crypto Market Tracker
+
+on:
+  repository_dispatch:
+    types: [website_request]
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */4 * * *" # Chạy mỗi 4 tiếng để backup
+
+jobs:
+  track-crypto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Crypto Tracker
+        env:
+          SERVICE_ACCOUNT_KEY: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+        run: python scripts/crypto_tracker.py
